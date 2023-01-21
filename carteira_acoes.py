@@ -144,37 +144,37 @@ def separate_sectors( df ):
     construcao_civil = df[ df['setor'] == 'construção_civil'].drop('setor', axis=1)
     construcao_e_engenharia = df[ df['setor'] == 'construção_e_engenharia'].drop('setor', axis=1)
     diversos = df[ df['setor'] == 'diversos'].drop('setor', axis=1)
-    energia_elétrica = df[ df['setor'] == 'energia_elétrica'].drop('setor', axis=1)
+    energia_eletrica = df[ df['setor'] == 'energia_elétrica'].drop('setor', axis=1)
     equipamentos = df[ df['setor'] == 'equipamentos'].drop('setor', axis=1)
-    exploração_de_imóveis = df[ df['setor'] == 'exploração_de_imóveis'].drop('setor', axis=1)
-    gás = df[ df['setor'] == 'gás'].drop('setor', axis=1)
+    exploracao_de_imoveis = df[ df['setor'] == 'exploração_de_imóveis'].drop('setor', axis=1)
+    gas = df[ df['setor'] == 'gás'].drop('setor', axis=1)
     holdings_diversificadas = df[ df['setor'] == 'holdings_diversificadas'].drop('setor', axis=1)
-    intermediários_financeiros = df[ df['setor'] == 'intermediários_financeiros'].drop('setor', axis=1)
+    intermediarios_financeiros = df[ df['setor'] == 'intermediários_financeiros'].drop('setor', axis=1)
     madeira_e_papel = df[ df['setor'] == 'madeira_e_papel'].drop('setor', axis=1)
-    máquinas_e_equipamentos = df[ df['setor'] == 'máquinas_e_equipamentos'].drop('setor', axis=1)
+    maquinas_e_equipamentos = df[ df['setor'] == 'máquinas_e_equipamentos'].drop('setor', axis=1)
     material_de_transporte = df[ df['setor'] == 'material_de_transporte'].drop('setor', axis=1)
-    mineração = df[ df['setor'] == 'mineração'].drop('setor', axis=1)
-    petróleo = df[ df['setor'] == 'petróleo'].drop('setor', axis=1)
-    gás_e_biocombustíveis = df[ df['setor'] == '_gás_e_biocombustíveis'].drop('setor', axis=1)
-    previdência_e_seguros = df[ df['setor'] == 'previdência_e_seguros'].drop('setor', axis=1)
-    programas_e_serviços = df[ df['setor'] == 'programas_e_serviços'].drop('setor', axis=1)
-    químicos = df[ df['setor'] == 'químicos'].drop('setor', axis=1)
-    serviços_diversos = df[ df['setor'] == 'serviços_diversos'].drop('setor', axis=1)
-    serviços_financeiros_diversos = df[ df['setor'] == 'serviços_financeiros_diversos'].drop('setor', axis=1)
+    mineracao = df[ df['setor'] == 'mineração'].drop('setor', axis=1)
+    petroleo = df[ df['setor'] == 'petróleo'].drop('setor', axis=1)
+    gas_e_biocombustiveis = df[ df['setor'] == '_gás_e_biocombustíveis'].drop('setor', axis=1)
+    previdencia_e_seguros = df[ df['setor'] == 'previdência_e_seguros'].drop('setor', axis=1)
+    programas_e_servicos = df[ df['setor'] == 'programas_e_serviços'].drop('setor', axis=1)
+    quimicos = df[ df['setor'] == 'químicos'].drop('setor', axis=1)
+    servicos_diversos = df[ df['setor'] == 'serviços_diversos'].drop('setor', axis=1)
+    servicos_financeiros_diversos = df[ df['setor'] == 'serviços_financeiros_diversos'].drop('setor', axis=1)
     siderurgia_e_metalurgia = df[ df['setor'] == 'siderurgia_e_metalurgia'].drop('setor', axis=1)
     tecidos = df[ df['setor'] == 'tecidos'].drop('setor', axis=1)
-    vestuário_e_calçados = df[ df['setor'] == '_vestuário_e_calçados'].drop('setor', axis=1)
-    telecomunicações = df[ df['setor'] == 'telecomunicações'].drop('setor', axis=1)
+    vestuario_e_calcados = df[ df['setor'] == '_vestuário_e_calçados'].drop('setor', axis=1)
+    telecomunicacoes = df[ df['setor'] == 'telecomunicações'].drop('setor', axis=1)
     transporte = df[ df['setor'] == 'transporte'].drop('setor', axis=1)
-    utilidades_domésticas = df[ df['setor'] == 'utilidades_domésticas'].drop('setor', axis=1)
+    utilidades_domesticas = df[ df['setor'] == 'utilidades_domésticas'].drop('setor', axis=1)
 
     lista_setores = [
         agropecuaria, agua_e_saneamento, alimentos_processados, serv_medicos_analises_e_diagnasticos, automoveis_e_motocicletas,
         comercio, comercio_e_distribuicao, computadores_e_equipamentos, construcao_civil, construcao_e_engenharia, diversos, 
-        energia_elétrica, equipamentos, exploração_de_imóveis, gás, holdings_diversificadas, intermediários_financeiros, 
-        madeira_e_papel, máquinas_e_equipamentos, material_de_transporte, mineração, petróleo, gás_e_biocombustíveis, 
-        previdência_e_seguros, programas_e_serviços, químicos, serviços_diversos, serviços_financeiros_diversos, 
-        siderurgia_e_metalurgia, tecidos, vestuário_e_calçados, telecomunicações, transporte, utilidades_domésticas ]
+        energia_eletrica, equipamentos, exploracao_de_imoveis, gas, holdings_diversificadas, intermediarios_financeiros, 
+        madeira_e_papel, maquinas_e_equipamentos, material_de_transporte, mineracao, petroleo, gas_e_biocombustiveis, 
+        previdencia_e_seguros, programas_e_servicos, quimicos, servicos_diversos, servicos_financeiros_diversos, 
+        siderurgia_e_metalurgia, tecidos, vestuario_e_calcados, telecomunicacoes, transporte, utilidades_domesticas ]
             
     return lista_setores
 
