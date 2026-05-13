@@ -27,14 +27,13 @@ def data_collect( ):
 
 def data_cleaning( df ):
     # rename
-    old_cols = ['Cotação', 'P/L', 'P/VP', 'PSR', 'Div.Yield', 'P/Ativo', 'P/Cap.Giro',
-       'P/EBIT', 'P/Ativ Circ.Liq', 'EV/EBIT', 'EV/EBITDA', 'Mrg Ebit',
-       'Marg_Liquida', 'Liq. Corr.', 'ROIC', 'ROE', 'Liq.2meses', 'Patrim. Líq',
-       'Dív.Brut/ Patrim.', 'Cresc. Rec.5a']
+    #old_cols = ['Cotação', 'P/L', 'P/VP', 'PSR', 'Div.Yield', 'P/Ativo', 'P/Cap.Giro',
+    #   'P/EBIT', 'P/Ativ Circ.Liq', 'EV/EBIT', 'EV/EBITDA', 'Mrg Ebit',
+    #   'Marg_Liquida', 'Liq. Corr.', 'ROIC', 'ROE', 'Liq.2meses', 'Patrim. Líq',
+    #   'Dív.Brut/ Patrim.', 'Cresc. Rec.5a']
 
-    new_cols = [cols.lower() for cols in old_cols]
-    df.columns = new_cols
-
+    df.columns = [cols.lower() for cols in df.columns]
+    
     return df.reset_index()
 
 # ------------------------------------------------------------------------------------------------------------
